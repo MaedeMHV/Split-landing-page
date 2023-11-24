@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.both {
+  @apply flex flex-row h-screen w-screen bg-neutral-600 flex-1;
+}
+.split {
+  @apply w-[50%] h-screen relative px-9 flex flex-col gap-24 justify-center items-center duration-500 ease-linear;
+}
+.first {
+  @apply bg-orange-400 bg-[url(../../img/4.jpg)] object-cover bg-right bg-cover;
+}
+.first.active {
+  @apply w-[150%] duration-500 ease-linear;
+}
+.second {
+  @apply bg-[url(../../img/2.jpg)] object-cover bg-cover bg-left;
+}
+.second.active {
+  @apply w-[150%];
+}
+.btn {
+  @apply text-white border-2 font-bold py-3 px-8 border-white shadow-lg rounded-lg;
+}
+
+.head {
+  @apply text-white text-3xl font-bold;
+}
+.content {
+  @apply text-white font-bold text-center;
+}
+.first-head {
+  @apply text-[#1c1c1c];
+}
+.first-content {
+  @apply text-[#1c1c1c];
+}
+.first-btn {
+  @apply text-[#1c1c1c] border-[#555];
+}
